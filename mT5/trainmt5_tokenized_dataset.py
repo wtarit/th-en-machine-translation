@@ -49,7 +49,7 @@ def compute_metrics(eval_preds):
 transformers.logging.set_verbosity_info()
 
 training_args = Seq2SeqTrainingArguments(
-    output_dir="mt5-small-scb-mt-th-en-cleaned-bf16",
+    output_dir="mt5-small-scb-mt-th-en-bf16",
     evaluation_strategy="epoch",
     learning_rate=5e-5,
     per_device_train_batch_size=32,
@@ -76,4 +76,4 @@ trainer = Seq2SeqTrainer(
 )
 
 trainer.train()
-trainer.save_model("mt5-small-scb")
+trainer.save_model("model/mt5-small-scb-mt-th-en-bf16")
