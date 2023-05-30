@@ -1,0 +1,10 @@
+accelerate
+datasets
+evaluate
+pythainlp
+peft
+pandas
+sacrebleu
+torch
+transformers
+wandb
